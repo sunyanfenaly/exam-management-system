@@ -10,7 +10,7 @@ import type { RootState, AppDispatch } from './store'
 const App = () => {
   const routes = useRoutes(router)
   const loading = useSelector((state: RootState) => state.user.loading)
-
+  console.log(loading)
   const dispatch: AppDispatch = useDispatch()
 
   useEffect(() => {
